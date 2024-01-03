@@ -1,17 +1,18 @@
 package superqualitytesting;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class main {
-/*
- * this test case is for opening chrome window and maximizing it */
+public class openlink {
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//here we open the link that with selenium
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();//opens the chrome window and maximizes it
-		
-
+		driver.get("https://dev.martix.me/Account/Login?ReturnUrl=%2FBackend");
+		driver.close();
 	}
 
 }
