@@ -13,7 +13,8 @@ public class ForgotPasswordTC {
 	
 		driver.manage().window().maximize();//opens the chrome window and maximizes it
 		driver.get("http://www.superquality.me//Account/Login?ReturnUrl=%2FBackend");
-		driver.findElement(By.linkText(""))
+		driver.findElement(By.linkText("Forgot Password?")).click();
+		driver.close();
 	}
 
 }
