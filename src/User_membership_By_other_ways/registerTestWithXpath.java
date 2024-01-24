@@ -26,11 +26,8 @@ public class registerTestWithXpath {
 		driver.findElement(By.xpath("//button[@title='أختر فئة']")).click();
 		driver.findElement(By.xpath("//*[@id=\"Industries\"]/div/div[1]/div/ul/li/a")).click();
 		driver.findElement(By.xpath("//span[@class='switchery']")).click();
-//		driver.findElement(By.cssSelector("button[class='Submit Request]"));
-		
-		
-
-		//driver.close();
+		driver.findElement(By.xpath("//input[@value='Submit Request']")).click();
+		driver.close();
 
 
 
