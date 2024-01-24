@@ -21,7 +21,14 @@ public class registerTestWithXpath {
 		driver.findElement(By.xpath("//input[@placeholder='أسم الشخص المخول']")).sendKeys("john doe");
 		driver.findElement(By.xpath("//input[@placeholder='رقم الشخص المخول']")).sendKeys("+1123456789");
 		driver.findElement(By.xpath("//input[@placeholder='إيميل الشخص المخول']")).sendKeys("john@doe.com");
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.findElement(By.xpath("//button[@title='أختر دولة']")).click();
+		driver.findElement(By.xpath("//*[@id=\"Country\"]/div/div[1]/div/ul/li[1]/a")).click();
+		driver.findElement(By.xpath("//button[@title='أختر فئة']")).click();
+		driver.findElement(By.xpath("//*[@id=\"Industries\"]/div/div[1]/div/ul/li/a")).click();
+		driver.findElement(By.xpath("//span[@class='switchery']")).click();
+//		driver.findElement(By.cssSelector("button[class='Submit Request]"));
+		
+		
 
 		//driver.close();
 
